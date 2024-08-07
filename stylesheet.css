@@ -6,6 +6,12 @@
     border: 1px solid #000; /* box model property*/
 }
 
+.top_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Rubric # 1*/
 h2 {
     font-style: italic;
@@ -13,11 +19,11 @@ h2 {
 /* Rubric # 2 and 4 */
 .card {
     background-color: #fff;
-    width: 450px;
+    width: 100%;
 }
 
 .card-body {
-    padding: 16px;
+    padding: 8px;
 }
 
 /* Rubric # 3*/
@@ -39,5 +45,6 @@ h2 {
 }
 /* Rubric # 8*/
 .image {
-    height: 400px;
+    height: 300px;
+    width: 400px;
 }
