@@ -21,8 +21,8 @@
   justify-content: space-between;
   gap: 52px;
   padding: clamp(24px, 4vw, 48px);
-  color: #fff;
-  background: #153e37;
+  color: #22453f;
+  background: #deeee5;
   overflow: hidden;
 }
 .bo-company::after {
@@ -30,12 +30,11 @@
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: repeating-linear-gradient(135deg, transparent 0 25px, #90c7ad25 25px 26px);
+  background: repeating-linear-gradient(135deg, transparent 0 25px, #709e891f 25px 26px);
   mask-image: linear-gradient(125deg, transparent 20%, black);
 }
 .backops-feature .bo-label { font: 600 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
-.backops-feature .bo-brand { font: 650 clamp(30px, 4vw, 51px)/1.12 Inter, system-ui, sans-serif; letter-spacing: -.065em; }
-.backops-feature .bo-brand small { color: #beefd6; font: 500 .48em/1 system-ui, sans-serif; letter-spacing: -.04em; }
+.backops-feature .bo-brand { display: block; width: min(100%, 225px); height: auto; }
 .backops-feature .bo-content { padding: clamp(24px, 4vw, 50px); }
 .backops-feature h2, .backops-feature h3 { color: var(--ink); font: 700 clamp(24px, 3vw, 36px)/1.14 Inter, system-ui, sans-serif; letter-spacing: -.045em; margin: 0 0 16px; }
 .backops-feature p { font: inherit; margin: 0 0 16px; color: #344e55; }
