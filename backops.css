@@ -4,44 +4,34 @@
   width: min(calc(100% - 40px), 1120px);
   margin: 38px auto 52px;
   display: grid;
-  grid-template-columns: minmax(210px, .72fr) minmax(0, 1.45fr);
-  border: 1px solid #d4dedb;
+  grid-template-columns: minmax(210px, 26%) minmax(0, 1fr);
+  border: 1px solid #dedede;
   border-radius: 18px;
-  background: #f8faf7;
+  background: #fff;
   color: var(--ink);
   overflow: hidden;
   text-align: left;
   font: 400 17px/1.55 Outfit, system-ui, sans-serif;
 }
 .backops-feature .bo-company {
-  position: relative;
-  isolation: isolate;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 52px;
-  padding: clamp(24px, 4vw, 48px);
-  color: #22453f;
-  background: #deeee5;
-  overflow: hidden;
-}
-.bo-company::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: repeating-linear-gradient(135deg, transparent 0 25px, #709e891f 25px 26px);
-  mask-image: linear-gradient(125deg, transparent 20%, black);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: clamp(24px, 3vw, 40px);
+  color: #515151;
+  background: #f2f2f2;
 }
 .backops-feature .bo-label { font: 600 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
-.backops-feature .bo-brand { display: block; width: min(100%, 225px); height: auto; }
+.backops-feature img.bo-brand { display: block; width: 172px; max-width: 100%; height: auto; object-fit: contain; flex: none; }
 .backops-feature .bo-content { padding: clamp(24px, 4vw, 50px); }
 .backops-feature h2, .backops-feature h3 { color: var(--ink); font: 700 clamp(24px, 3vw, 36px)/1.14 Inter, system-ui, sans-serif; letter-spacing: -.045em; margin: 0 0 16px; }
-.backops-feature p { font: inherit; margin: 0 0 16px; color: #344e55; }
-.backops-feature .bo-links { border-top: 1px solid #d4dedb; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
-.backops-feature a { font: 600 15px/1.5 system-ui, sans-serif; color: #14594b; text-decoration: underline; text-underline-offset: 3px; }
+.backops-feature p { font: inherit; margin: 0 0 16px; color: #454b52; }
+.backops-feature .bo-links { border-top: 1px solid #dedede; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+.backops-feature a { font: 600 15px/1.5 system-ui, sans-serif; color: #223348; text-decoration: underline; text-underline-offset: 3px; }
 .backops-feature a:focus-visible { outline: 2px solid #024caa; outline-offset: 3px; }
 @media (max-width: 700px) {
   .backops-feature { grid-template-columns: 1fr; width: calc(100% - 32px); margin: 24px auto 36px; }
-  .backops-feature .bo-company { gap: 20px; }
+  .backops-feature .bo-company { padding: 20px 24px; gap: 10px; }
 }
