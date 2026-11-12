@@ -1,0 +1,48 @@
+.backops-feature {
+  --ink: #10273c;
+  box-sizing: border-box;
+  width: min(calc(100% - 40px), 1120px);
+  margin: 38px auto 52px;
+  display: grid;
+  grid-template-columns: minmax(210px, .72fr) minmax(0, 1.45fr);
+  border: 1px solid #d4dedb;
+  border-radius: 18px;
+  background: #f8faf7;
+  color: var(--ink);
+  overflow: hidden;
+  text-align: left;
+  font: 400 17px/1.55 Outfit, system-ui, sans-serif;
+}
+.backops-feature .bo-company {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 52px;
+  padding: clamp(24px, 4vw, 48px);
+  color: #fff;
+  background: #153e37;
+  overflow: hidden;
+}
+.bo-company::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: repeating-linear-gradient(135deg, transparent 0 25px, #90c7ad25 25px 26px);
+  mask-image: linear-gradient(125deg, transparent 20%, black);
+}
+.backops-feature .bo-label { font: 600 12px/1.4 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.backops-feature .bo-brand { font: 650 clamp(30px, 4vw, 51px)/1.12 Inter, system-ui, sans-serif; letter-spacing: -.065em; }
+.backops-feature .bo-brand small { color: #beefd6; font: 500 .48em/1 system-ui, sans-serif; letter-spacing: -.04em; }
+.backops-feature .bo-content { padding: clamp(24px, 4vw, 50px); }
+.backops-feature h2, .backops-feature h3 { color: var(--ink); font: 700 clamp(24px, 3vw, 36px)/1.14 Inter, system-ui, sans-serif; letter-spacing: -.045em; margin: 0 0 16px; }
+.backops-feature p { font: inherit; margin: 0 0 16px; color: #344e55; }
+.backops-feature .bo-links { border-top: 1px solid #d4dedb; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; }
+.backops-feature a { font: 600 15px/1.5 system-ui, sans-serif; color: #14594b; text-decoration: underline; text-underline-offset: 3px; }
+.backops-feature a:focus-visible { outline: 2px solid #024caa; outline-offset: 3px; }
+@media (max-width: 700px) {
+  .backops-feature { grid-template-columns: 1fr; width: calc(100% - 32px); margin: 24px auto 36px; }
+  .backops-feature .bo-company { gap: 20px; }
+}
